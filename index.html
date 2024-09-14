@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="mainheading">Dynamic Resume Builder by Aiysha Noor</h1>
+
+      <div class="wrapper">
+        <!-- Resume Form -->
+        <section class="sec1">
+          <form id="resume-form">
+            <h2>Resume Form</h2>
+
+            <fieldset class="personal-info">
+              <legend>Personal Information</legend>
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                id="name"
+                placeholder="Enter your name"
+                required
+              />
+
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="Enter your email"
+                required
+              />
+
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                id="phone"
+                placeholder="Enter your phone"
+                required
+              />
+
+              <label for="address">Address:</label>
+              <input
+                type="text"
+                id="address"
+                placeholder="Enter your address"
+                required
+              />
+            </fieldset>
+
+            <fieldset class="education">
+              <legend>Education</legend>
+              <label for="education">Education:</label>
+              <textarea name="education" id="education" cols="3" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset class="experience">
+              <legend>Experience</legend>
+
+              <fieldset class="company">
+                <legend>Company</legend>
+                <label for="company">Company:</label>
+                <textarea name="company" id="company-name" cols="3" rows="4" required></textarea>
+              </fieldset>
+
+              <fieldset class="designation">
+                <legend>Designation</legend>
+                <label for="designation">Designation:</label>
+                <textarea name="designation" id="designation-name" cols="3" rows="4" required></textarea>
+              </fieldset>
+
+              <fieldset class="experience-details">
+                <legend>Experience Details</legend>
+                <label for="experience-details">Details:</label>
+                <textarea name="experience-details" id="experience-details" cols="3" rows="4" required></textarea>
+              </fieldset>
+            </fieldset>
+
+            <fieldset class="skills">
+              <legend>Skills</legend>
+              <label for="skills">Skills:</label>
+              <textarea name="skills" id="skills" cols="3" rows="4" required></textarea>
+            </fieldset>
+
+            <fieldset class="languages">
+              <legend>Languages</legend>
+              <label for="languages">Languages:</label>
+              <textarea name="languages" id="languages"></textarea>
+            </fieldset>
+
+            <button type="submit">Generate Resume</button>
+          </form>
+        </section>
+
+        <!-- Resume Preview -->
+        <section class="sec2">
+          <h2>Resume Preview</h2>
+          <div id="resume-preview">
+            <!-- This will be dynamically populated -->
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
